@@ -49,12 +49,13 @@ def button_func():
         elif calculate_result > 29.9:
             weight_range = "Obese"
 
-        result_label = tk.Label(text=(weight_range),bg="#EDF1D6")
+        result_label = tk.Label(text=(weight_range),bg="#EDF1D6",font="Times 14 normal",pady=10)
         result_label.pack()
 
     except:
         alert_label = tk.Label(text="Just Enter valid number !!!")
         alert_label.pack()
+        alert_label.after(5000,alert_label.destroy)
 
 
 
