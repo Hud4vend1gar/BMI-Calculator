@@ -16,13 +16,15 @@ height_label.pack()
 height_entry.pack()
 
 #? weight
-weight_label = tk.Label(text="Enter weight(kg)",background="#EDF1D6",pady=10)
-weight_entry = tk.Entry()
+weight_frame = tk.Frame(bg="#EDF1D6",pady=10)
+weight_frame.pack()
+weight_label = tk.Label(master=weight_frame,text="Enter weight(kg)",background="#EDF1D6",pady=10)
+weight_entry = tk.Entry(master=weight_frame)
 weight_label.pack()
 weight_entry.pack()
 
 #?calculate button
 calculate_button = tk.Button(text="Calculate")
-calculate_button.pack(padx=10,pady=10)
+calculate_button.pack()
 
 tk.mainloop()
