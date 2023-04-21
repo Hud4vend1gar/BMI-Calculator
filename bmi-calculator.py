@@ -1,5 +1,4 @@
 import tkinter as tk
-import time
 
 screen = tk.Tk()
 screen.minsize(220,260)
